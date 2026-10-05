@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Control de Equipo e Insumos</title>
+</head>
+<body>
+
+    <h1><center><font face="Arial" color="green" size="7">Sistema de Control de Equipo e Insumos</font></center></h1>
+    <p align="center"><font face="Arial" color="black" size="3">Proyecto Laboral 2026-2027 | Coordinación Académica</font></p>
+    <center><img src="Imagen.jfif"></center>
+
+    <h2><font face="Arial" color="green" size="5">Problemática</font></h2>
+    <p><font face="Arial" color="black" size="3">En la Coordinación Académica no tienen un control claro del equipo de cómputo, impresoras e insumos. Todo se apunta en hojas o se sabe de memoria, así que no saben qué compu funciona, cuál ya se descompuso ni qué insumos faltan. Se pierde el rastro de las cosas, se compra de más o de menos, y cuando necesitan algo no saben si lo tienen.</font></p>
+
+    <h2><font face="Arial" color="green" size="5">Objetivo general</font></h2>
+    <p><font face="Arial" color="black" size="3">Desarrollar un sistema que registre el equipo, los insumos y los mantenimientos de la Coordinación Académica, y que muestre todo de un vistazo, para que el personal sepa qué hay disponible, qué funciona y qué falta.</font></p>
+
+    <h2><font face="Arial" color="green" size="5">Objetivos específicos</font></h2>
+    <ul>
+        <li><font face="Arial" color="black" size="3">Registrar el equipo de cómputo e impresoras (tipo, área y estado).</font></li>
+        <li><font face="Arial" color="black" size="3">Registrar los insumos disponibles (nombre y cantidad).</font></li>
+        <li><font face="Arial" color="black" size="3">Consultar el inventario completo de un solo vistazo.</font></li>
+        <li><font face="Arial" color="black" size="3">Registrar los mantenimientos de los equipos.</font></li>
+    </ul>
+
+    <h2><font face="Arial" color="green" size="5">Propósito</font></h2>
+    <p><font face="Arial" color="black" size="3">Que la Coordinación Académica lleve un control ordenado y actualizado de su equipo de cómputo y sus insumos, facilitando el registro de mantenimientos, la depuración del equipo y la consulta rápida del inventario.</font></p>
+
+    <h2><font face="Arial" color="green" size="5">Entrevista</font></h2>
+    <p><font face="Arial" color="black" size="3"><b>Entrevistado:</b> Responsable de Coordinación Académica</font></p>
+    <ol>
+        <li><font face="Arial" color="black" size="3"><b>¿Cómo llevan actualmente el control del equipo e insumos?</b><br>Regularmente cada mes nos abastecen de insumos de papelería por área de trabajo y el plantel lleva un control interno de inventario de equipo de cómputo.</font></li>
+        <li><font face="Arial" color="black" size="3"><b>¿Qué es lo que más se les complica?</b><br>Imprimir, ya que no contamos con impresoras suficientes.</font></li>
+        <li><font face="Arial" color="black" size="3"><b>¿Qué datos les gustaría registrar de cada equipo?</b><br>Archivos importantes del área.</font></li>
+        <li><font face="Arial" color="black" size="3"><b>¿Qué datos les gustaría registrar de cada insumo?</b><br>Cuánto más nos podrían abastecer y qué papelería existe.</font></li>
+        <li><font face="Arial" color="black" size="3"><b>¿Les gustaría poder consultar todo lo que hay de un vistazo?</b><br>Sí.</font></li>
+        <li><font face="Arial" color="black" size="3"><b>¿Les gustaría registrar cuándo se le da mantenimiento a un equipo?</b><br>Sí, por control, resguardo e inventario del equipo.</font></li>
+        <li><font face="Arial" color="black" size="3"><b>¿Quién va a usar el sistema?</b><br>Personal docente y administrativo.</font></li>
+        <li><font face="Arial" color="black" size="3"><b>¿Qué les gustaría que el sistema mejorara de cómo trabajan hoy?</b><br>Depurar más seguido el equipo, control de antivirus.</font></li>
+    </ol>
+
+    <h2><font face="Arial" color="green" size="5">Requerimientos del sistema</font></h2>
+    <h3><font face="Arial" color="green" size="4">Funcionales</font></h3>
+    <ul>
+        <li><font face="Arial" color="black" size="3">Registrar el equipo de cómputo (tipo, área y estado).</font></li>
+        <li><font face="Arial" color="black" size="3">Registrar los insumos de papelería (nombre y cantidad).</font></li>
+        <li><font face="Arial" color="black" size="3">Consultar el inventario completo de un vistazo.</font></li>
+        <li><font face="Arial" color="black" size="3">Registrar los mantenimientos y la depuración del equipo.</font></li>
+        <li><font face="Arial" color="black" size="3">Llevar un control de antivirus del equipo.</font></li>
+    </ul>
+    <h3><font face="Arial" color="green" size="4">No funcionales</font></h3>
+    <ul>
+        <li><font face="Arial" color="black" size="3">Fácil de usar para el personal docente y administrativo.</font></li>
+        <li><font face="Arial" color="black" size="3">Rápido y que no falle.</font></li>
+        <li><font face="Arial" color="black" size="3">Que funcione en las computadoras del plantel.</font></li>
+        <li><font face="Arial" color="black" size="3">Que guarde la información para no perder los archivos importantes.</font></li>
+    </ul>
+
+    <h2><font face="Arial" color="green" size="5">Diseño del sistema</font></h2>
+    <p><font face="Arial" color="black" size="3">El sistema se desarrolló en un solo formulario (Form1) en Visual Studio con Windows Forms. Tiene un menú desplegable para elegir la acción, campos para capturar los datos, botones para guardar y consultar, y una lista para mostrar los resultados.</font></p>
+
+    <h3><font face="Arial" color="green" size="4">Menú principal</font></h3>
+    <pre>
+CONTROL DE EQUIPO E INSUMOS
+Coordinación Académica
+
+Opcion: [Registrar equipo]
+
+Tipo de equipo o insumo: [__________]
+Area:                    [__________]
+Estado:                  [__________]
+
+[Guardar]          [Consultar]
+    </pre>
+
+    <h3><font face="Arial" color="green" size="4">Explicación del menú</font></h3>
+    <ul>
+        <li><font face="Arial" color="black" size="3"><b>Registrar equipo:</b> captura tipo, área y estado.</font></li>
+        <li><font face="Arial" color="black" size="3"><b>Registrar insumo:</b> captura nombre y cantidad.</font></li>
+        <li><font face="Arial" color="black" size="3"><b>Registrar mantenimiento:</b> captura equipo y fecha.</font></li>
+        <li><font face="Arial" color="black" size="3"><b>Consultar:</b> muestra todo lo registrado en la lista.</font></li>
+    </ul>
+
+    <h3><font face="Arial" color="green" size="4">Botones</font></h3>
+    <ul>
+        <li><font face="Arial" color="black" size="3"><b>Guardar:</b> guarda el registro según la opción elegida.</font></li>
+        <li><font face="Arial" color="black" size="3"><b>Consultar:</b> muestra todo lo registrado.</font></li>
+    </ul>
+
+    <h2><font face="Arial" color="green" size="5">Explicación del sistema</font></h2>
+    <p><font face="Arial" color="black" size="3">Este sistema lo hicimos para que en la Coordinación Académica dejen de andar buscando en hojas y de memoria qué equipo tienen y qué insumos les faltan. Es un programa sencillo hecho en Visual Studio, con un solo formulario, para que cualquiera lo use sin complicarse.</font></p>
+    <p><font face="Arial" color="black" size="3">Con él sabes en todo momento qué compu sirve, cuál está dañada y qué insumos tienes. No se te pierde la información, llevas el control de los mantenimientos y es tan fácil de usar que cualquier persona de la coordinación lo maneja sin problema.</font></p>
+
+</body>
+</html>
